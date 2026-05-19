@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Library Management System - Project Details</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+
+        /* ===============================
+           Project Detail Page Styling
+        ================================== */
+
+        .detail-hero {
+            padding-top: 15rem;
+            padding-bottom: 6rem;
+            text-align: center;
+            background: var(--second-bg-color);
+        }
+
+        .detail-hero h1 {
+            font-size: 5rem;
+            color: var(--main-color);
+            margin-bottom: 2rem;
+        }
+
+        .detail-hero .subtitle {
+            font-size: 2rem;
+            color: var(--text-color);
+            max-width: 90rem;
+            margin: 0 auto;
+            line-height: 1.7;
+            opacity: .9;
+        }
+
+        .project-content-section {
+            padding: 6rem 9%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+            background: var(--bg-color);
+        }
+
+        .project-showcase-img {
+            width: 100%;
+            max-width: 950px;
+            border-radius: 2rem;
+            border: .2rem solid var(--main-color);
+            box-shadow: 0 10px 35px rgba(0, 171, 240, 0.25);
+            transition: .4s ease;
+        }
+
+        .project-showcase-img:hover {
+            transform: scale(1.02);
+        }
+
+        .project-info-box {
+            width: 100%;
+            max-width: 950px;
+            background: var(--second-bg-color);
+            padding: 4rem;
+            border-radius: 2rem;
+            border: .1rem solid rgba(0, 171, 240, 0.3);
+        }
+
+        .project-info-box h2 {
+            font-size: 3rem;
+            color: var(--main-color);
+            margin-bottom: 2rem;
+            display: inline-block;
+            border-bottom: .2rem solid var(--main-color);
+            padding-bottom: .5rem;
+        }
+
+        .project-info-box .long-desc {
+            font-size: 1.7rem;
+            color: var(--text-color);
+            line-height: 1.9;
+            margin-bottom: 4rem;
+            white-space: pre-wrap;
+        }
+
+        .tech-stack,
+        .feature-list {
+            margin-bottom: 4rem;
+        }
+
+        .tech-stack h3,
+        .feature-list h3 {
+            font-size: 2.3rem;
+            color: var(--main-color);
+            margin-bottom: 2rem;
+        }
+
+        .tech-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .tech-items span {
+            padding: 1rem 2rem;
+            border: .2rem solid var(--main-color);
+            border-radius: 3rem;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            transition: .3s ease;
+        }
+
+        .tech-items span:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+            transform: translateY(-3px);
+        }
+
+        .feature-list ul {
+            padding-left: 2rem;
+        }
+
+        .feature-list ul li {
+            font-size: 1.6rem;
+            color: var(--text-color);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .action-buttons {
+            margin-top: 4rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--main-color);
+            border: .2rem solid var(--main-color);
+            padding: 1rem 2.5rem;
+            border-radius: .8rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            transition: .4s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: .8rem;
+        }
+
+        .btn-secondary:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+        }
+
+        .back-btn-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        /* ===============================
+           Responsive Design
+        ================================== */
+
+        @media (max-width: 768px) {
+
+            .detail-hero h1 {
+                font-size: 3.8rem;
+            }
+
+            .detail-hero .subtitle {
+                font-size: 1.7rem;
+            }
+
+            .project-info-box {
+                padding: 3rem;
+            }
+
+            .project-info-box h2 {
+                font-size: 2.5rem;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===============================
+         Header Section
+    ================================== -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            Hashir Ashfaq
+            <span class="animate" style="--i:1;"></span>
+        </a>
+
+        <div class="bx bx-menu" id="menu-icon">
+            <span class="animate" style="--i:2;"></span>
+        </div>
+
+        <nav class="navbar">
+
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects" class="active">Projects</a>
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ===============================
+         Hero Section
+    ================================== -->
+
+    <section class="detail-hero">
+
+        <h1>Smart Library Management System</h1>
+
+        <p class="subtitle">
+            Django-Based Digital Book Borrowing, Publishing &
+            Library Management Platform with Authentication,
+            Borrow Approval Workflow and PDF Download System
+        </p>
+
+    </section>
+
+    <!-- ===============================
+         Main Content
+    ================================== -->
+
+    <section class="project-content-section">
+
+        <!-- Project Image -->
+
+        <img src="assets/media/library2.png"
+             alt="Smart Library Management System"
+             class="project-showcase-img">
+        <img src="assets/media/library2.1.png"
+             alt="Smart Library Management System"
+             class="project-showcase-img">
+        <img src="assets/media/library2.2.png"
+             alt="Smart Library Management System"
+             class="project-showcase-img">
+
+        <!-- Project Information -->
+
+        <div class="project-info-box">
+
+            <h2>About The Project</h2>
+
+            <p class="long-desc">
+The Smart Library Management System is a modern full-stack web application developed using Django and SQLite database. The platform was designed to digitize and automate traditional library operations through a secure and scalable online system.
+
+Users can create accounts, securely log in, search books dynamically using intelligent filtering, send borrow requests, and download digital books directly from the platform. An admin-controlled approval workflow was implemented where book requests can be approved or rejected based on availability and request status.
+
+The system also provides an author publishing feature that allows authors to upload and manage their own books within the platform. Advanced backend functionality was implemented using Django ORM, authentication systems, CRUD operations, file upload/download handling, and relational database management.
+
+Additional modules include borrow tracking, return management, real-time book availability updates, responsive frontend pages, and secure resource management. This project demonstrates practical expertise in Python backend development, database architecture, authentication workflows, and real-world web application engineering.
+            </p>
+
+            <!-- Technologies Used -->
+
+            <div class="tech-stack">
+
+                <h3>Technologies Used</h3>
+
+                <div class="tech-items">
+
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>SQLite</span>
+                    <span>Django ORM</span>
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Authentication System</span>
+                    <span>CRUD Operations</span>
+                    <span>File Upload & Download</span>
+                    <span>Responsive Design</span>
+
+                </div>
+
+            </div>
+
+            <!-- Features -->
+
+            <div class="feature-list">
+
+                <h3>Key Features</h3>
+
+                <ul>
+
+                    <li>Secure User Registration & Authentication System</li>
+
+                    <li>Dynamic Book Search with Smart Filtering</li>
+
+                    <li>Book Borrow Request Approval & Rejection Workflow</li>
+
+                    <li>Digital PDF Book Download Functionality</li>
+
+                    <li>Author Book Publishing & Management System</li>
+
+                    <li>Borrow & Return Tracking Management</li>
+
+                    <li>Real-Time Book Availability Updates</li>
+
+                    <li>CRUD Operations for Books, Authors & Members</li>
+
+                    <li>SQLite Database Integration with Django ORM</li>
+
+                    <li>Responsive User Interface & Backend File Handling</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <div class="action-buttons">
+
+                <a href="https://github.com/hashir403/online-library-website.git"
+                   target="_blank"
+                   class="btn">
+
+                    <i class="bx bxl-github"></i>
+                    View Source Code
+
+                </a>
+
+                <a href="index.html#projects"
+                   class="btn-secondary">
+
+                    <i class='bx bx-arrow-back'></i>
+                    Back to Projects
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===============================
+         Footer Section
+    ================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-text">
+
+            <p>
+                Copyright &copy; 2026 |
+                Designed & Developed by Hashir Ashfaq |
+                All Rights Reserved
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+                        <a href="https://www.linkedin.com/in/hashir-ashfaq"
+               target="_blank">
+
+                <i class='bx bxl-linkedin'></i>
+
+            </a>
+
+            <a href="https://github.com/hashir403"
+               target="_blank">
+
+                <i class='bx bxl-github'></i>
+
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- ===============================
+         JavaScript
+    ================================== -->
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
