@@ -1193,7 +1193,7 @@ section:nth-child(odd) .animate.scroll,
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* hamesha 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* responsive grid layout */
     gap: 3rem;
     justify-content: center;   /* 1 ya 2 cards ko center kare */
     max-width: 1100px;         /* container ki max width */
@@ -1351,6 +1351,11 @@ section:nth-child(odd) .animate.scroll,
 
 /* Project Detail Pages Responsive Styles */
 @media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
     .detail-hero {
         padding-top: 10rem !important;
         padding-bottom: 4rem !important;
