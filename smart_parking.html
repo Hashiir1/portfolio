@@ -9,6 +9,7 @@
 
     <title>Smart Parking System</title>
 
+    <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -205,6 +206,10 @@
             <span class="animate" style="--i:1;"></span>
         </a>
 
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon">
             <span class="animate" style="--i:2;"></span>
         </div>
@@ -243,16 +248,16 @@
 
         <img src="assets/media/smart_parking.png"
              alt="Smart Parking Detection System"
-             class="project-showcase-img">
+             class="project-showcase-img reveal-scale">
 
 
         <!-- Project Information -->
 
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
 
             <h2>About The Project</h2>
 
-            <p class="long-desc">This project addresses the ubiquitous challenge of urban parking inefficiency by implementing a Computer Vision and Full-Stack Web solution. At its core lies a custom-trained YOLOv11 deep learning model, fine-tuned for precise parking slot detection and occupancy classification, achieving high accuracy in identifying empty and filled spaces. The model is seamlessly integrated into a secure Django web framework, featuring robust user authentication (Login/Signup) and a responsive interface for real-time monitoring.
+            <p class="long-desc">This project addresses the ubiquitous challenge of urban parking inefficiency by implementing a Computer Vision and Web solution. At its core lies a custom-trained YOLOv11 deep learning model, fine-tuned for precise parking slot detection and occupancy classification, achieving high accuracy in identifying empty and filled spaces. The model is seamlessly integrated into a secure Django web framework, featuring robust user authentication (Login/Signup) and a responsive interface for real-time monitoring.
 
 The user journey extends from live detection to a detailed historical dashboard, allowing administrators to analyze occupancy trends, generate reports, and optimize resource allocation. This end-to-end development demonstrates proficiency in AI model deployment, database management, and frontend integration. The project is not merely a technical exercise but a scalable, business-oriented solution that combines the power of AI with practical, everyday utility. It showcases a rare blend of advanced Machine Learning engineering and full-stack development, ideal for a company seeking a versatile, solutions-driven professional.
             </p>

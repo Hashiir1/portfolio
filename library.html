@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library Management System - Project Details</title>
 
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
+    <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
   <style>
@@ -167,6 +168,10 @@
             <span class="animate" style="--i:1;"></span>
         </a>
 
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon">
             <span class="animate" style="--i:2;"></span>
         </div>
@@ -196,15 +201,15 @@
         <!-- Project Image -->
         <img src="assets/media/library1.png"
              alt="Library Management System"
-             class="project-showcase-img">
+             class="project-showcase-img reveal-scale">
 
         <!-- Info Box -->
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
 
             <h2>About The Project</h2>
 
             <p class="long-desc">
-The Library Management System is a full-stack web application developed using Django and SQLite database. This platform allows users to create accounts, securely log in, search digital books instantly, and download PDF resources directly from the system.
+The Library Management System is a web application developed using Django and SQLite database. This platform allows users to create accounts, securely log in, search digital books instantly, and download PDF resources directly from the system.
 
 The project was designed to provide a modern digital library experience with a clean user interface and efficient backend architecture. Advanced search functionality was implemented using dynamic database queries, enabling users to quickly find books through keyword-based searching.
 

@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>e commerce - Project Details</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
+    <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
     /* Professional detail page specific styles */
@@ -96,6 +97,10 @@
     <!-- Header / Navbar -->
     <header class="header">
         <a href="index.html" class="logo">Hashir Ashfaq<span class="animate" style="--i:1;"></span></a>
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
         <nav class="navbar">
             <a href="index.html#home">Home</a>
@@ -112,10 +117,10 @@
     <!-- Main Project Content -->
     <section class="project-content-section" style="background: var(--bg-color);">
         <!-- Big Showcase Image -->
-        <img src="assets/media/e-commerce.png" alt="e commerce" class="project-showcase-img">
+        <img src="assets/media/e-commerce.png" alt="e commerce" class="project-showcase-img reveal-scale">
         
         <!-- Detailed Info Box -->
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
             <h2>About The Project</h2>
             <p class="long-desc">Designed and developed a modern full-stack e-commerce website using the Django framework with a responsive frontend built in HTML, CSS, and JavaScript. Implemented core e-commerce functionalities including product management, shopping cart, user authentication, order handling, and secure checkout flow. Focused on clean UI/UX design, optimized website performance, responsive layouts, and SEO-friendly structure to improve user engagement and search visibility. Developed scalable backend architecture with efficient database management and dynamic content handling for a smooth shopping experience across all devices.</p>
             

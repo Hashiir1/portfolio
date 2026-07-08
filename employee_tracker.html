@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Employee Tracker - Project Details</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
+    <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
     /* Professional detail page specific styles */
@@ -96,6 +97,10 @@
     <!-- Header / Navbar -->
     <header class="header">
         <a href="index.html" class="logo">Hashir Ashfaq<span class="animate" style="--i:1;"></span></a>
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
         <nav class="navbar">
             <a href="index.html#home">Home</a>
@@ -112,10 +117,10 @@
     <!-- Main Project Content -->
     <section class="project-content-section" style="background: var(--bg-color);">
         <!-- Big Showcase Image -->
-        <img src="assets/media/employee_tracker.png" alt="Employee Tracker" class="project-showcase-img">
+        <img src="assets/media/employee_tracker.png" alt="Employee Tracker" class="project-showcase-img reveal-scale">
         
         <!-- Detailed Info Box -->
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
             <h2>About The Project</h2>
             <p class="long-desc">Developed a Python-based Employee Activity Monitoring System that detects user inactivity through real-time keyboard event tracking. Implemented automated notifications, screenshot and webcam capture, and email-based reporting workflows using OpenCV, PyAutoGUI, Pynput, and SMTP services. Enhanced administrative monitoring through automated evidence collection and reporting.</p>
             

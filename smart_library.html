@@ -9,6 +9,7 @@
 
     <title>Smart Library Management System - Project Details</title>
 
+    <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -205,6 +206,10 @@
             <span class="animate" style="--i:1;"></span>
         </a>
 
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon">
             <span class="animate" style="--i:2;"></span>
         </div>
@@ -246,22 +251,22 @@
 
         <img src="assets/media/library2.png"
              alt="Smart Library Management System"
-             class="project-showcase-img">
+             class="project-showcase-img reveal-scale">
         <img src="assets/media/library2.1.png"
              alt="Smart Library Management System"
-             class="project-showcase-img">
+             class="project-showcase-img reveal-scale">
         <img src="assets/media/library2.2.png"
              alt="Smart Library Management System"
-             class="project-showcase-img">
+             class="project-showcase-img reveal-scale">
 
         <!-- Project Information -->
 
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
 
             <h2>About The Project</h2>
 
             <p class="long-desc">
-The Smart Library Management System is a modern full-stack web application developed using Django and SQLite database. The platform was designed to digitize and automate traditional library operations through a secure and scalable online system.
+The Smart Library Management System is a modern web application developed using Django and SQLite database. The platform was designed to digitize and automate traditional library operations through a secure and scalable online system.
 
 Users can create accounts, securely log in, search books dynamically using intelligent filtering, send borrow requests, and download digital books directly from the platform. An admin-controlled approval workflow was implemented where book requests can be approved or rejected based on availability and request status.
 

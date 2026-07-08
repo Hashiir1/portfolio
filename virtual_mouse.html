@@ -7,7 +7,8 @@
   <title>Virtual Mouse | AI Gesture Control System - Hashir Ashfaq</title>
   <meta name="description" content="AI-Driven Virtual Mouse using MediaPipe & OpenCV - Real-time hand gesture recognition for touchless human-computer interaction. Control cursor with finger movements and gestures.">
   <meta name="keywords" content="virtual mouse, AI gesture control, computer vision, MediaPipe, OpenCV, Python, hand tracking">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
+    <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <style>
     * {
@@ -286,6 +287,10 @@
 
     <header class="header">
         <a href="index.html" class="logo">Hashir Ashfaq<span class="animate" style="--i:1;"></span></a>
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
         <nav class="navbar">
             <a href="index.html#home">Home</a>
@@ -311,7 +316,7 @@
             </video>
         </div>
         
-        <div class="project-info-box">
+        <div class="project-info-box reveal-up">
             <h2> Project Overview</h2>
             <p>An innovative <strong>hands-free mouse control system</strong> that leverages real-time computer vision and machine learning to track hand gestures, enabling users to control computer cursors without any physical touch. This solution demonstrates expertise in AI, computer vision, and human-computer interaction.</p>
             
