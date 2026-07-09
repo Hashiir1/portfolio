@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Mask Detection System</title>
+  <script>if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}</script>
+    <link rel="stylesheet" href="assets/css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    /* Professional detail page specific styles */
+    .detail-hero {
+            min-height: auto;
+        padding-top: 15rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        background: var(--second-bg-color);
+    }
+    .detail-hero h1 {
+        font-size: 5rem;
+        color: var(--main-color);
+        margin-bottom: 2rem;
+    }
+    .detail-hero p.subtitle {
+        font-size: 2rem;
+        color: var(--text-color);
+        max-width: 80rem;
+        margin: 0 auto;
+        opacity: 0.9;
+    }
+    .project-content-section {
+            min-height: auto;
+        padding: 5rem 9%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .project-showcase-img {
+        width: 100%;
+        max-width: 900px;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 171, 240, 0.2);
+        border: .2rem solid var(--main-color);
+        transition: transform 0.5s ease;
+    }
+    .project-showcase-img:hover {
+        transform: scale(1.02);
+    }
+    .project-info-box {
+        background: var(--second-bg-color);
+        padding: 4rem;
+        border-radius: 2rem;
+        border: .1rem solid rgba(0, 171, 240, 0.3);
+        max-width: 900px;
+        width: 100%;
+    }
+    .project-info-box h2 {
+        font-size: 3rem;
+        color: var(--main-color);
+        margin-bottom: 2rem;
+        border-bottom: .2rem solid var(--main-color);
+        display: inline-block;
+        padding-bottom: .5rem;
+    }
+    .project-info-box p.long-desc {
+        font-size: 1.6rem;
+        line-height: 1.8;
+        color: var(--text-color);
+        margin-bottom: 4rem;
+        white-space: pre-wrap; /* Keeps paragraphs intact */
+    }
+    .back-btn-container {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .btn-secondary {
+        background: transparent;
+        color: var(--main-color);
+        border: .2rem solid var(--main-color);
+        padding: 1rem 2.5rem;
+        border-radius: .8rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        transition: .5s;
+        display: inline-block;
+        margin-right: 1.5rem;
+    }
+    .btn-secondary:hover {
+        background: var(--main-color);
+        color: var(--bg-color);
+    }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="index.html" class="logo">Hashir Ashfaq<span class="animate" style="--i:1;"></span></a>
+        <div class="theme-toggle-btn" id="theme-toggle" title="Toggle light / dark theme">
+            <i class='bx bx-sun'></i>
+        </div>
+
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <nav class="navbar">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#projects" class="active">Projects</a>
+        </nav>
+    </header>
+
+    <!-- Project Title Hero -->
+    <section class="detail-hero">
+        <h1>Face Mask Detection System</h1>
+        <p class="subtitle">Developed and deployed a computer vision system using CNN deep learning to detect face mask compliance in real-time via live camera streams and image uploads.</p>
+    </section>
+
+    <!-- Main Project Content -->
+    <section class="project-content-section" style="background: var(--bg-color);">
+        <!-- Big Showcase Image -->
+        <img src="assets/media/face_mask_detection1.png" alt="Face Mask Detection" class="project-showcase-img reveal-scale">
+        
+        <!-- Detailed Info Box -->
+        <div class="project-info-box reveal-up">
+            <h2>About The Project</h2>
+            <p class="long-desc">Public health safety has become a global priority, yet manual monitoring of mask compliance is inefficient, subjective, and resource-intensive. To address this challenge, I developed an end-to-end AI surveillance system that automates face mask detection with remarkable accuracy and speed.
+
+I engineered a Convolutional Neural Network (CNN) using TensorFlow/Keras, training it on a diverse dataset to achieve robust performance across varied lighting conditions, angles, and ethnicities. The trained model (saved as a .h5 file) integrates seamlessly into a Django web application, providing users with two intuitive interaction modes: real-time detection via live webcam feed and image-based detection through file uploads. The responsive frontend, built with HTML, CSS, and JavaScript, delivers instant visual feedback with bounding boxes and confidence scores, ensuring users can trust the system's predictions.
+
+To enhance operational utility, I integrated a contact form that automatically dispatches user inquiries and violation reports to administrative email addresses via SMTP, enabling swift response coordination. This project demonstrates my ability to bridge deep learning research with full-stack web deployment, delivering a production-ready tool for public health infrastructure.</p>
+            
+    <div class="action-buttons">
+        
+        <!-- Source Code -->
+        <a href="https://github.com/hashir403/face-mask-detection-system.git" target="_blank" class="btn-secondary">
+            <i class="bx bxl-github"></i> Source Code
+        </a>
+    </div>
+</div>
+        </div>
+
+        <div class="back-btn-container">
+            <a href="index.html#projects" class="btn-secondary"><i class='bx bx-arrow-back'></i> Back to Portfolio</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 | Designed and Maintenance by Hashir Ashfaq | All Rights Reserved</p>
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/hashir-ashfaq" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
